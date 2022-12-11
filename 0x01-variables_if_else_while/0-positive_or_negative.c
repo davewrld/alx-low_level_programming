@@ -1,18 +1,13 @@
 #include <stdlib.h>
-
 #include <time.h>
 #include <stdio.h>
-
-/* more headers goes there */
-
-
-
-/* betty style doc for function main goes there
- * print random number if postive, negative or zero
- * */
+/**
+ * main - Entry poin
+ *
+ *Return: Always 0 (Suceess)
+ */
 
 int main(void)
-
 {
 	int n;
 	
@@ -28,4 +23,5 @@ int main(void)
 		printf("%d is zero\n", n);
 	
 	return (0);
+
 }
