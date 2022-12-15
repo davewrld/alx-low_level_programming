@@ -1,5 +1,5 @@
 /*
- * File: main.h
+ * main - header file 
  * Header file for all functions 
  */
 
