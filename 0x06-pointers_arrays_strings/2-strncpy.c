@@ -10,27 +10,16 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int index = 0, src_len = 0;
 
-	/**
-	 * iterate through src array
-	 * if no null byte
-	 * among first n bytes of source
-	 * string plsced will not be 
-	 * null terminated
-	 */
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
-	/**
-	 * if source length is less than n
-	 * write addtitional nullbytes to dest to
-	 * ensure thsst s totsl of n bytes is written
-	 */
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++';
-	}
+	while (src[index++])
+		src_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
+
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
 
 	return (dest);
 }
