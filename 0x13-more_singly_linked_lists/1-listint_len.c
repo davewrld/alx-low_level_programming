@@ -4,17 +4,18 @@
 /**
  * listint_len - Returns the number of elements in a linked list.
  * @h: A pointer to the head of the listint_t list.
- * Retun: The number of elements in the listint_t list.
+ * Retun: Interger.
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t nodes = 0;
+	const listint_t *tp;
+	unsigned int cnr = 0;
 
-	while (h)
+	tp = h;
+	while (tp)
 	{
-		nodes++;
-		h = h->next;
+		cnr++;
+		tp = tp->next;
 	}
-
-	return (nodes);
+	return (cnr);
 }
