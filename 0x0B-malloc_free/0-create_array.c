@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * create_array  - Creates an array of chars and intializzes it witha specific char.
+ * create_array  - Creates an array of chars and intializes with char.
  * @size: The size of the array to be intialized.
  * @c: The specific char to iwntialize the array with
  *
- * Return: If size == 0 or thr function fails - NULL. else - a pointer to the array.
+ * Return: Pointer to newly crated array, else NULL
  */
 char *create_array(unsigned int size, char c)
 {
 	char *array;
+
 	unsinged int index;
 
 
@@ -21,9 +22,7 @@ char *create_array(unsigned int size, char c)
 
 	if (array == NULL)
 		return (NULL);
-	
-	for(index = 0; index < size; index++)
+	for (index = 0; index < size; index++)
 		array[index] = c;
-	
 	return (array);
 }
