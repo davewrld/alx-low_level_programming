@@ -1,8 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
-int main() {
-	putchar('_);
+/**
+ * main - print "putchar" followed by new line.
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
+{
 	putchar('p');
 	putchar('u');
 	putchar('t');
@@ -12,5 +17,5 @@ int main() {
 	putchar('r);
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
