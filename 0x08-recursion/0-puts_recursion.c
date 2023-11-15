@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * -puts_recursion - Prints a string and new line.
- *  @s: pointer to string to be printed
+ * _puts_recursion - Prints a string and new line.
+ * @s: pointer to string to be printed
  */
 void _puts_recursion(char *s)
 {
