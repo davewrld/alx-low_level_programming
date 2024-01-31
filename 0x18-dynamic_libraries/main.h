@@ -1,5 +1,5 @@
-#define MAIN_H
 #ifndef MAIN_H
+#define MAIN_H
 
 /*prototypes*/
 
@@ -24,5 +24,5 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif main_h
+#endif /*_MAIN_H_*/
 
