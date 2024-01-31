@@ -8,4 +8,5 @@ int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 int _atoi(char *s);
+char *_strcpy(char *dest, char *src);
 #endif
